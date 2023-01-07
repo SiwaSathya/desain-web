@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .checked {
+     color: orange;
+    }
+    </style>
+    <title>Document</title>
+    <style>
+        .carousel-inner{
+            width: 100%;
+            max-height: 45vh !important;
+        }
+        .card-img-top{
+            max-height: 150px !important
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/1.jpeg" class="d-block w-100" alt="..." style="height: 50vh;">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/2.jpeg" class="d-block w-100" alt="..." style="height: 50vh ;">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/3.jpg" class="d-block w-100" alt="..." style="height: 50vh ;">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary" aria-label="Third navbar example">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Desa Wisata</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="akomodasi.html">Akomodasi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Wawasan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Saran</a>
+                  </li> 
+                </ul>
+                <form>
+                  <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                </form>
+              </div>
+            </div>
+          </nav>
+          <div class="shadow p-3 mb-5 bg-body rounded">
+            <div class="row">
+                <div class="col">
+                    <label for="exampleFormControlInput1" class="form-label">Kategori</label>
+                    <select id="jenis" class="form-select" aria-label="Default select example">
+                        <option value="Hotel">Hotel</option>
+                        <option value="Kendaraan">Kendaraan</option>
+                        <option value="Lainnya">Lainnya</option>
+                      </select>
+                </div>
+                <div class="col">
+                    <label for="exampleFormControlInput1" class="form-label">Check In</label>
+                    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="col">
+                    <label for="exampleFormControlInput1" class="form-label">Check Out</label>
+                    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="col" style="margin-top: 1.8% ;"> 
+                    <a id="cari" type="button" class="btn btn-success">CARI</a>
+                </div>
+            </div>
+          </div>
+          <div class="row mt-1 ms-3" id="divHotel" style="display: none;">
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/hotel1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5>1.500.000</h5>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/hotel4.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5>1.500.000</h5>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/hotel2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5>1.500.000</h5>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/hotel3.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5>1.500.000</h5>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="row mt-1 ms-3" id="divKendaraan" style="display: none ;">
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/kendaraan.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Alphard</h5>
+                      <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                      <p class="card-text">Mobil ini dilengkapi dengan gengsi yang tinggi, bikin kalian makin makan hati aokwkaokoakkaw</p>
+                      <h5>1.500.000</h5>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-success" onclick="booking('Alphard','1.000.000')">Booking</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/kendaraan2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Avanza</h5>
+                      <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                      <p class="card-text">Mobil ini cocok untuk pasangan yang sering nonton petir pakek teropong</p>
+                      <h5>1.500.000</h5>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/kendaraan3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Mobil Gta </h5>
+                      <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                      <p class="card-text">Mobil ini dilengkapi dengan kemampuan untuk terbang, sangat ampuh untuk menghindari macet</p>
+                      <h5>1.500.000</h5>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/kendaraan4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Mobil tahanan</h5>
+                      <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                      <p class="card-text">Mobil ini dilengkapi kemampuan untuk mengantar kalian ke kantor polisi secara cepat aman modis dan strategis</p>
+                      <h5>1.500.000</h5>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="judulModal">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="harga" class="form-label">Harga</label>
+                    <input type="text" readonly="readonly" id="harga" class="form-control" placeholder="Disabled input">
+
+                    <label for="qty" class="form-label">Qty</label>
+                    <input type="number" id="qty" class="form-control" placeholder="Disabled input">
+
+                    <label for="total" class="form-label">Total</label>
+                    <input type="text" readonly="readonly" id="total" class="form-control" placeholder="Disabled input">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>    
+    </main>
+</body>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/bootstrap/jquery-3.6.1.min.js"></script>
+<script>
+    $("#cari").click(function(){
+        var jenis = $('#jenis').val();
+       if (jenis == "Hotel"){
+        $("#divHotel").fadeIn("1000");
+        $("#divKendaraan").fadeOut();
+       }
+       else if (jenis == "Kendaraan"){
+        $("#divHotel").fadeOut();
+        $("#divKendaraan").fadeIn("10000");
+       } else{
+        alert("layanan belum tersedia")
+       }
+    // var scrollPos = $("#divKendaraan").offset().top;
+    // $(window).scrollTop(scrollPos)
+    });
+
+    function booking(namaObjek,harga){
+        $('#modalForm').modal('show');
+        $('#judulModal').text(namaObjek);
+        $('#harga').val(harga);
+   
+    }
+
+    $('#qty').on('input', function(e){
+            var qty = $('#qty').val();
+            var harga = $('#harga').val().replace(/\./g,'');
+            var total = parseInt(harga) * parseInt(qty)
+            $('#total').val(total.toLocaleString());
+            // alert (harga);
+        });
+</script>
+</html>
